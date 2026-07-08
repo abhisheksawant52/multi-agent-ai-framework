@@ -1,0 +1,13 @@
+aws_region  = "us-east-1"
+environment = "dev"
+name_prefix = "multi-agent"
+
+ecr_image_tag_mutability = "IMMUTABLE"
+ecr_scan_on_push         = true
+
+task_visibility_timeout_seconds = 300
+task_max_receive_count          = 5
+
+tags = {
+  Owner = "platform-team"
+}
